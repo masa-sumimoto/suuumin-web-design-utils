@@ -1,0 +1,72 @@
+.app-page-meta {
+  margin-bottom: 3rem;
+}
+
+.app-meta-page-header {
+  display: flex;
+  gap: 0.875rem;
+  background-color: #212121;
+  font-size: 0.875rem;
+  line-height: 1;
+  justify-content: left;
+  align-items: center;
+  height: 2rem;
+  padding: 0 1rem;
+}
+
+.app-meta-page-header__title {
+  color: #efefef;
+  font-weight: 500;
+}
+
+.app-meta-page-header__back-link {
+  text-transform: uppercase;
+  color: #4bdfbf;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.app-meta-page-header__back-link:hover {
+  text-transform: uppercase;
+  color: #2bc4a3;
+  text-decoration: none;
+}
+
+.app-meta-result-disp {
+  background-color: #ececec;
+  color: #232323;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.app-u-bg-body {
+  background-color: #a5d3f2;
+}
+.app-u-bg-margin {
+  background-color: #f2cea5;
+}
+.app-u-bg-padding {
+  background-color: #c9debc;
+}
+.app-u-bg-container {
+  background-color: #f2cee9;
+}
+
+.app-measuring {
+  margin-bottom: 1rem;
+}
+
+.app-measuring__container {
+  padding: 0;
+}
+
+.app-measuring,
+.app-measuring__container {
+  border-top: 1px solid #f55;
+}
+
+.app-measuring__window-width-num,
+.app-measuring__container-width-num {
+  color: #f55;
+  font-size: 0.875rem;
+}

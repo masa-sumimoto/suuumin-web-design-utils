@@ -9,16 +9,26 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/foo/bar")
-def foobar():
-    return render_template("./foo/bar.html")
+@app.route("/grid-system/bootstrap-v5.3.0")
+def grid_system_bs():
+    return render_template("./grid-system/bootstrap-v5.3.0.html")
+
+
+@app.route("/grid-system/tailwind-v3.3.2")
+def grid_system_tw():
+    return render_template("./grid-system/tailwind-v3.3.2.html")
 
 
 # for Build
 #
 @app.route("/output")
 def output():
-    templates = {"index.html": "", "foo/bar.html": "foo"}
+    templates = {
+        "index.html": "",
+        "grid-system/tailwind-v3.3.2.html": "grid-system",
+        "grid-system/bootstrap-v5.3.0.html": "grid-system",
+    }
+
     for template, directory in templates.items():
         html = render_template(template)
         output_dir = os.path.join("dist", directory)
